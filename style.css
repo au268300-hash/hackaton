@@ -1,0 +1,1174 @@
+/* --- Google Fonts Import is in HTML --- */
+
+/* --- VARIABLES & RESET --- */
+:root {
+    --primary-color: #B88E2F; /* Gold/Ochre */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-cream: #FCF8F3;
+    --bg-light: #F4F5F7;
+    --white: #FFFFFF;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-icons i:hover {
+    color: var(--primary-color);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 24px;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    /* Placeholder image for furniture background */
+    background: url('./pages/scandinavian-interior-mockup-wall-decal-background\ 1.png') no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.hero-overlay {
+    background: #FFF3E3; /* Light beige box */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.hero-overlay h6 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.hero-overlay h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hero-overlay p {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 20px 60px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+/* --- BROWSE THE RANGE --- */
+.range {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.section-header h2, .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.section-header p {
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.range-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.range-card {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.range-card img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.range-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* --- OUR PRODUCTS --- */
+.products {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: var(--bg-light);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mia khalifa{
+    padding:50px 0
+    text-align: center;
+}
+.furniurofurniture{
+    font-size: 2.2rem;
+    margin-bottom:40px;
+}
+.jhonny{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,200px)
+    gap: 10px;
+}
+.jhonny img{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,200px);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Badges (New / Discount) */
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.badge.discount {
+    background: #E97171;
+}
+
+.badge.new {
+    background: #2EC1AC;
+}
+
+/* Hover Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 58, 58, 0.72);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.product-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button {
+    background: var(--white);
+    color: var(--primary-color);
+    border: none;
+    padding: 12px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.overlay button:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.overlay .actions {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    gap: 20px;
+}
+
+.overlay .actions span {
+    cursor: pointer;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    color: #898989;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.old-price {
+    color: #B0B0B0;
+    text-decoration: line-through;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.show-more-container {
+    margin-top: 40px;
+}
+
+.btn-outline {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 12px 60px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* --- INSPIRATION SECTION --- */
+.inspiration {
+    background: var(--bg-cream);
+    padding: 40px 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.inspiration-text {
+    flex: 1;
+    max-width: 400px;
+}
+
+.inspiration-text h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.inspiration-text p {
+    margin-bottom: 25px;
+    color: var(--text-light);
+}
+
+.inspiration-images {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+}
+
+.slide {
+    position: relative;
+    transition: 0.5s;
+}
+
+.slide img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.slide.active img {
+    width: 400px;
+}
+
+.slide.next img {
+    width: 300px;
+    height: 450px; /* slightly smaller to simulate depth */
+    margin-top: 25px;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    min-width: 200px;
+}
+
+/* --- FOOTER --- */
+footer {
+    border-top: 1px solid #D9D9D9;
+    padding: 60px 5% 20px;
+    margin-top: 60px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+.brand-col {
+    max-width: 300px;
+}
+
+.footer-col h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.address {
+    color: #9F9F9F;
+    font-style: normal;
+}
+
+.footer-col h4 {
+    color: #9F9F9F;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.footer-col ul li {
+    margin-bottom: 30px;
+}
+
+.footer-col ul li a {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.footer-col form {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-col input {
+    border: none;
+    border-bottom: 1px solid var(--text-dark);
+    padding: 5px;
+    outline: none;
+}
+
+.footer-col button {
+    border: none;
+    border-bottom: 1px solid var(--text-dark);
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.footer-bottom {
+    border-top: 1px solid #D9D9D9;
+    padding-top: 30px;
+    color: var(--text-dark);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+    
+    .nav-links, .nav-icons {
+        display: none; /* Simplified mobile hide */
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .hero {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .hero-overlay {
+        padding: 20px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 32px;
+    }
+
+    .range-container {
+        flex-direction: column;
+    }
+
+    .range-card img {
+        height: 300px;
+    }
+
+    .inspiration {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    
+    .inspiration-images {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+}
+}
+
+/* --- Google Fonts Import is in HTML --- */
+
+/* --- VARIABLES & RESET --- */
+:root {
+    --primary-color: #B88E2F; /* Gold/Ochre */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-cream: #FCF8F3;
+    --bg-light: #F4F5F7;
+    --white: #FFFFFF;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Navbar links and icons are laptop/desktop default */
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-icons i:hover {
+    color: var(--primary-color);
+}
+
+.mobile-menu-btn {
+    display: none; /* Hidden by default on large screens */
+    font-size: 24px;
+}
+
+/* --- HERO SECTION (Laptop Default) --- */
+.hero {
+    background: url('./pages/scandinavian-interior-mockup-wall-decal-background\ 1.png') no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.hero-overlay {
+    background: #FFF3E3; 
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.hero-overlay h6 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.hero-overlay h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hero-overlay p {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 20px 60px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+/* --- BROWSE THE RANGE --- */
+.range {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.section-header h2, .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.section-header p {
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+/* Range container uses flex-wrap for basic responsiveness */
+.range-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.range-card {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.range-card img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.range-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* --- OUR PRODUCTS --- */
+.products {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+/* Product grid uses auto-fit for automatic responsiveness based on width */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: var(--bg-light);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Badges (New / Discount) */
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.badge.discount {
+    background: #E97171;
+}
+
+.badge.new {
+    background: #2EC1AC;
+}
+
+/* Hover Overlay (for products) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 58, 58, 0.72);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.product-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button {
+    background: var(--white);
+    color: var(--primary-color);
+    border: none;
+    padding: 12px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.overlay button:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.overlay .actions {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    gap: 20px;
+}
+
+.overlay .actions span {
+    cursor: pointer;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    color: #898989;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.old-price {
+    color: #B0B0B0;
+    text-decoration: line-through;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.show-more-container {
+    margin-top: 40px;
+}
+
+.btn-outline {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 12px 60px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* --- INSPIRATION SECTION (Laptop Default) --- */
+.inspiration {
+    background: var(--bg-cream);
+    padding: 40px 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.inspiration-text {
+    flex: 1;
+    max-width: 400px;
+}
+
+.inspiration-text h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.inspiration-text p {
+    margin-bottom: 25px;
+    color: var(--text-light);
+}
+
+.inspiration-images {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+}
+
+.slide {
+    position: relative;
+    transition: 0.5s;
+    /* Ensure slides don't shrink on desktop/laptop */
+    flex-shrink: 0;
+}
+
+.slide img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.slide.active img {
+    width: 400px;
+}
+
+.slide.next img {
+    width: 300px;
+    height: 450px; 
+    margin-top: 25px;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    min-width: 200px;
+}
+
+/* --- SOCIAL SHOWCASE (Instagram Grid - Laptop Default) --- */
+.social-showcase {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.furniurofurniture{
+    font-size: 2.2rem;
+    margin-bottom:40px;
+}
+
+/* Desktop: Wide 7-column layout */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    padding: 0 5%;
+}
+
+.social-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* --- FOOTER (Laptop Default) --- */
+footer {
+    border-top: 1px solid #D9D9D9;
+    padding: 60px 5% 20px;
+    margin-top: 60px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+.brand-col {
+    max-width: 300px;
+}
+
+.footer-col h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.address {
+    color: #9F9F9F;
+    font-style: normal;
+}
+
+.footer-col h4 {
+    color: #9F9F9F;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.footer-col ul li {
+    margin-bottom: 30px;
+}
+
+.footer-col ul li a {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.footer-col form {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-col input {
+    border: none;
+    border-bottom: 1px solid var(--text-dark);
+    padding: 5px;
+    outline: none;
+}
+
+.footer-col button {
+    border: none;
+    border-bottom: 1px solid var(--text-dark);
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.footer-bottom {
+    border-top: 1px solid #D9D9D9;
+    padding-top: 30px;
+    color: var(--text-dark);
+}
+
+/* ========================================= */
+/* --- RESPONSIVE MOBILE VIEW (<= 768px) --- */
+/* ========================================= */
+@media (max-width: 768px) {
+    /* Navbar: Hide links/icons, show hamburger button */
+    .navbar {
+        padding: 20px 5%;
+    }
+    
+    .nav-links, .nav-icons {
+        display: none; 
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    /* Hero: Center content vertically on the screen */
+    .hero {
+        justify-content: center;
+        padding: 20px;
+        /* Ensure background image scales well */
+        background-position: left center; 
+    }
+
+    .hero-overlay {
+        padding: 20px;
+        max-width: 100%; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-overlay h1 {
+        font-size: 32px;
+    }
+
+    /* Browse Range: Stack cards vertically */
+    .range-container {
+        flex-direction: column;
+    }
+
+    .range-card img {
+        height: 300px;
+    }
+    
+    /* Product Grid: Remains functional due to auto-fit, but can be adjusted for spacing if needed */
+    .product-grid {
+        gap: 20px;
+    }
+
+    /* Inspiration Section: Stack content vertically and make images horizontally scrollable */
+    .inspiration {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    
+    .inspiration-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .inspiration-images {
+        width: 100%;
+        overflow-x: scroll; /* Allows horizontal scrolling */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        gap: 10px;
+        padding-bottom: 10px; /* Space for hidden scrollbar */
+    }
+
+    .inspiration-images::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .slide img {
+        height: 350px;
+        width: 250px;
+    }
+    
+    /* Social Grid: Change from 7 columns to a tighter 3-column layout on mobile */
+    .social-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(auto-fit, 120px); 
+        padding: 0 20px;
+    }
+
+
+    /* Footer: Stack columns vertically */
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-col form {
+        justify-content: space-between;
+    }
+}
