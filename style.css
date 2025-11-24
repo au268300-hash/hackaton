@@ -96,7 +96,7 @@ img {
 /* --- HERO SECTION --- */
 .hero {
     /* Placeholder image for furniture background */
-    background: url('./pages/scandinavian-interior-mockup-wall-decal-background\ 1.png') no-repeat center center/cover;
+    background: url('./') no-repeat center center/cover;
     height: 80vh;
     position: relative;
     display: flex;
