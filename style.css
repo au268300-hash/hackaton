@@ -96,13 +96,14 @@ img {
 /* --- HERO SECTION --- */
 .hero {
     /* Placeholder image for furniture background */
-    background: url('./pages/scandinavian-interior-mockup-wall-decal-background\ 1.png') no-repeat center center/cover;
+    background: url(./scandinavian-interior-mockup-wall-decal-background\ 1.png) no-repeat center center/cover;
     height: 80vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 5%;
+    
 }
 
 .hero-overlay {
@@ -239,7 +240,7 @@ img {
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(2,200px)
-    gap: 10px;
+    gap : 10px;
 }
 .jhonny img{
     display: grid;
