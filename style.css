@@ -94,16 +94,16 @@ img {
 }
 
 /* --- HERO SECTION --- */
-.hero {
-    /* Placeholder image for furniture background */
-    background: url('./') no-repeat center center/cover;
+/* .hero { */
+    /* background image applied in css */
+/* background-image:url(./homepage.png) ;
     height: 80vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 5%;
-}
+    padding-right: 5%;   
+} */
 
 .hero-overlay {
     background: #FFF3E3; /* Light beige box */
@@ -239,7 +239,7 @@ img {
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(2,200px)
-    gap: 10px;
+    gap : 10px;
 }
 .jhonny img{
     display: grid;
