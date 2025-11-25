@@ -94,16 +94,16 @@ img {
 }
 
 /* --- HERO SECTION --- */
-/* .hero { */
-    /* background image applied in css */
-/* background-image:url(./homepage.png) ;
+.hero {
+    /* background image applied in html */
+background-image:url(./homepageImg.png) ;
     height: 80vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 5%;   
-} */
+}
 
 .hero-overlay {
     background: #FFF3E3; /* Light beige box */
